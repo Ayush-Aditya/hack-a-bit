@@ -35,7 +35,7 @@ def main():
 
     model = load_model('models/cnnCat2_augmented.keras')
     path = os.getcwd()
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     font = cv2.FONT_HERSHEY_COMPLEX_SMALL
     count=0
     score=0
@@ -43,7 +43,7 @@ def main():
     rpred=[99]
     lpred=[99]
     
-    api_key = 'b086a1891123424eb2cbfa6036fd173a'
+    api_key = ''
 
     # Create an instance of the OpenCage geocoder
     geocoder = OpenCageGeocode(api_key)
